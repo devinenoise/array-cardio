@@ -59,7 +59,7 @@ console.log(totalYears);
 const yearsLived = inventors.sort((a, b) => {
   const lastGuy = a.passed - a.year;
   const nextGuy = b.passed - b.year;
-  return lastGuy > nextGuy ? -1: 1; 
+  return lastGuy > nextGuy ? -1 : 1; 
 });
 console.table(yearsLived);
 
@@ -77,7 +77,7 @@ console.table(yearsLived);
 const alpha = people.sort((lastOne , nextOne) => {
 const [aLast, aFirst] = lastOne.split(', ');
 const [bLast, bFirst] = nextOne.split(', ');
-return aLast > bLast ? 1: -1;
+return aLast > bLast ? 1 : -1;
 });  
 console.log(alpha);
 
@@ -88,7 +88,7 @@ console.log(alpha);
 
     const transportation = data.reduce(function(obj, item) {
     if (!obj[item]) {
-      obj[item] =0;
+      obj[item] = 0;
     }
       obj[item]++;
     return obj;
